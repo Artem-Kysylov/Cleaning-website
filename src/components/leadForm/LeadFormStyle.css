@@ -1,0 +1,15 @@
+.lead__form .container {
+    padding: 60px 0 60px 0;
+    display: flex;
+    gap: 25px;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .lead__form .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

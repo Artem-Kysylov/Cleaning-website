@@ -1,0 +1,142 @@
+.footer {
+    padding: 80px 0 80px 0;
+}
+
+.footer__top, .footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__top {
+    gap: 30px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 32px;
+}
+
+.main__logo, .newsletter__text {
+    margin-bottom: 24px;
+}
+
+.newsletter__agreement {
+    font-size: 12px;
+}
+
+.newsletter__agreement span {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: opacity .5s ease;
+}
+
+.newsletter__inputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.newsletter__inputWrapper input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 12px;
+    width: 340px;
+}
+
+.newsletter__inputWrapper input::placeholder {
+    color: #505050;
+    font-size: inherit;
+}
+
+.footer__nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navCol__title {
+    font-weight: 600;
+    margin-bottom: 16px;
+    white-space: nowrap;
+}
+
+.navCol__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.navCol__item {
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity .5s ease;
+}
+
+.navCol__social {
+    display: flex;
+    gap: 12px;
+}
+
+.navCol__social {
+    cursor: pointer;
+    transition: opacity .5s ease;
+}
+
+.navCol__social span {
+    font-size: 14px;
+}
+
+.bottom__tech {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.bottom__copy, .bottom__techLink {
+    font-size: 14px;
+}
+
+.bottom__techLink  {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: opacity .5s ease;
+}
+
+.bottom__techLink:hover, .navCol__item:hover, .newsletter__agreement span:hover, .navCol__social:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 940px) {
+    .footer__top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__nav {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__nav {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer__bottom, .bottom__tech  {
+        flex-direction: column-reverse;
+    }
+
+    .bottom__tech {
+        margin-bottom: 25px;
+    }
+
+    .newsletter__inputWrapper  {
+        flex-direction: column;
+    }
+
+    .newsletter__inputWrapper input {
+        width: 100%;
+    }
+}
